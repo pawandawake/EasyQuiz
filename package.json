@@ -1,5 +1,5 @@
 {
-  "name": "sheyquiz",
+  "name": "easyquiz",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,10 +8,9 @@
     "npm": "6.13.4"
   },
   "scripts": {
-    "start": "nodemon server/server.js",
+    "start": "node server/server.js",
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run client\" \"npm start\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "author": "pawan",
   "license": "ISC",
